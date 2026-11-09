@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}EL ELECTRONICA{% endblock %}
+
+{% block content %}
+
+<div class="card__grid">
+  {% for item in items %}
+  <div class="card">
+    <a href="items/item/{{ item.id }}">{{ item.type }} {{ item.article }}</a>
+    <h2>Price: {{ item.price }}</h2>
+    <button type="submit">ADD TO CART</button>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
