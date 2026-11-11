@@ -53,14 +53,6 @@
 <div class="container mt-5 py-5">
   <div class="row">
 
-    <div class="col-12 col-md-3">
-      {% for i in range(12) %}
-      <aside class="p-2 bg-light border">
-        Something {{ i }}
-      </aside>
-      {% endfor %}
-    </div>
-
     <div class="col-12 offset-md-2 col-md-7">
       <div class="d-grid">
         <div>
@@ -71,7 +63,7 @@
             </div>
             <div class="col-md-10">
               <div class="card-body">
-                <a class="card-title" href="items/item/{{ item.id }}">{{ item.type }} {{ item.article }}</a>
+                <a class="card-title" href="items/item/{{ item.id }}">{{ item.article }}</a>
                 <h3 class="card-text">{{ item.price }} руб</h3>
                 <button class="btn btn-primary" type="submit" value="{{ item.id }}">Add to Cart</button>
               </div>
